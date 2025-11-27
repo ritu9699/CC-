@@ -1,0 +1,59 @@
+⭐ Steps to Install a Basic Web Server (Apache) on a Cloud VM
+1. Connect to the Cloud Virtual Machine
+
+Use SSH to connect to the Linux VM from the local system:
+
+ssh -i key.pem ubuntu@<public-ip>
+
+
+This opens the terminal of the cloud server.
+
+2. Update System Packages
+
+Run the update command to refresh the package list:
+
+sudo apt update
+
+
+This ensures that the latest versions of packages are installed.
+
+3. Install the Apache Web Server
+
+Install Apache using the package manager:
+
+sudo apt install apache2 -y
+
+
+Apache will start automatically after installation.
+
+4. Create a Simple HTML Webpage
+
+Navigate to the default web directory:
+
+cd /var/www/html
+
+
+Create or edit the homepage file:
+
+sudo nano index.html
+
+
+Add a basic HTML message such as:
+
+<h1>Welcome to the Cloud VM Web Server</h1>
+
+
+Save and exit the editor.
+
+5. Allow HTTP Traffic (Port 80)
+
+Ensure that port 80 is open in the cloud platform's firewall or security group settings so the webpage can be viewed publicly.
+
+6. Access the Webpage Using Public IP
+
+Open any web browser and enter:
+
+http://<public-ip>
+
+
+The custom HTML webpage will appear if Apache is running correctly.
