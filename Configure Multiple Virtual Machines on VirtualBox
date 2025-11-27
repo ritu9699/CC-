@@ -1,0 +1,72 @@
+Configure Multiple Virtual Machines on VirtualBox
+➤ Step 1: Open Oracle VirtualBox
+
+• Launch Oracle VirtualBox from the system.
+• Ensure that at least one Linux ISO file (Ubuntu/CentOS) is available for installation.
+
+➤ Step 2: Create the First Virtual Machine
+
+• Click New and create VM-1 (Example: Ubuntu-VM1).
+• Select OS type (Linux → Ubuntu 64-bit).
+• Allocate RAM and CPU.
+• Create a virtual hard disk.
+• Attach the Linux ISO.
+• Start the VM and complete OS installation.
+
+➤ Step 3: Create the Second Virtual Machine
+
+• Again click New and create VM-2 (Example: Ubuntu-VM2).
+• Repeat the same process:
+– Choose OS type
+– Set RAM and CPU
+– Create virtual disk
+– Attach Linux ISO
+• Start and install the OS.
+
+➤ Step 4: Configure the Network Mode
+
+• Select VM-1 → Settings → Network.
+• Change Adapter 1 to Host-Only Adapter or NAT Network.
+• Select VM-2 → apply the same network mode so both VMs are on the same network.
+• Save settings.
+
+➤ Step 5: Check Network Connectivity Between VMs
+
+• Start both VM-1 and VM-2.
+• Open terminal in each VM.
+• Find IP address using:
+
+ip a
+
+
+• From VM-1, ping VM-2:
+
+ping <VM2-IP>
+
+
+• From VM-2, ping VM-1:
+
+ping <VM1-IP>
+
+
+• Successful ping confirms proper communication.
+
+➤ Step 6: Demonstrate File Transfer Between VMs
+
+• Use scp command for file transfer (example: copying a file from VM-1 to VM-2):
+
+scp file.txt user@<VM2-IP>:/home/user/
+
+
+• Enter the password when asked.
+• Verify the file in VM-2 using:
+
+ls
+
+➤ Step 7: Capture Screenshots
+
+• Take screenshots of:
+– Network configuration in VirtualBox
+– IP address outputs from both VMs
+– Successful ping between VMs
+– File transfer commands and results
