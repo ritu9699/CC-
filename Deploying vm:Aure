@@ -1,0 +1,55 @@
+1. Login to Azure Portal
+
+Go to portal.azure.com and sign in.
+Select Virtual Machines from the left side.
+
+2. Create Virtual Machine
+
+Click Create → Azure Virtual Machine.
+Enter basic details like VM name and region.
+
+3. Choose Operating System
+
+Select one OS image:
+
+Ubuntu Linux
+
+Windows Server
+
+4. Choose VM Size
+
+Select B1s, which is the free-tier virtual machine.
+
+5. Configure Administrator Login
+
+Linux → upload SSH key
+
+Windows → create username and password
+
+6. Networking Settings
+
+Enable inbound port:
+
+SSH (22) for Linux
+
+RDP (3389) for Windows
+
+7. Review and Create
+
+Click Review + Create, then Create.
+
+8. Connect to VM
+
+Linux → use SSH command from your terminal
+
+Windows → download RDP file and log in
+
+9. Capture VM Details
+
+Take screenshots of:
+
+VM Overview Page
+
+Public IP
+
+Successful connection
