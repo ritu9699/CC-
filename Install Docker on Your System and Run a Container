@@ -1,0 +1,66 @@
+Install Docker on Your System and Run a Container
+➤ Step 1: Install Docker
+
+• On Linux (Ubuntu), install Docker using:
+
+sudo apt update
+sudo apt install docker.io -y
+
+
+• On Windows, install Docker Desktop from the official website and complete the setup.
+
+➤ Step 2: Check Docker Installation
+
+• Verify that Docker is installed correctly:
+
+docker --version
+
+
+• Start the Docker service if needed:
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+➤ Step 3: Pull a Basic Docker Image
+
+• Download the hello-world container image:
+
+docker pull hello-world
+
+➤ Step 4: Run the Container
+
+• Execute the container:
+
+docker run hello-world
+
+
+• A message confirming successful installation will appear.
+
+➤ Step 5: View Running and Stopped Containers
+
+• To list all active containers:
+
+docker ps
+
+
+• To list all containers (including stopped):
+
+docker ps -a
+
+➤ Step 6: Check Container Logs
+
+• View the logs of the hello-world container:
+
+docker logs <container-id>
+
+
+• Replace <container-id> with the ID shown from the docker ps -a command.
+
+➤ Step 7: Capture Outputs
+
+• Take screenshots of:
+– Docker version
+– Docker image pull
+– Container run output
+– Container list
+– Container logs
