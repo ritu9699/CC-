@@ -1,0 +1,31 @@
+➤ Open the AWS Management Console and sign in with the root or admin account.
+
+➤ Go to IAM → Users → Add User.
+
+➤ Enter a username (example: student-user).
+
+➤ Enable AWS Management Console access and set a custom password.
+
+➤ Click Next: Permissions.
+
+➤ Choose Attach existing policies directly.
+
+➤ Select the following policies:
+• AmazonS3FullAccess
+• AmazonEC2ReadOnlyAccess
+
+➤ Click Create User to finish user creation.
+
+⭐ Demonstrate Role-Based Access
+
+➤ Copy the IAM login URL generated after user creation.
+
+➤ Open a new browser or incognito window and log in using the IAM user credentials.
+
+Access Verification:
+
+✔ S3 Access:
+The user can create buckets, upload objects, and delete files (Full Access).
+
+✔ EC2 Access:
+The user can only view EC2 instances but cannot start, stop, or terminate them (Read-Only Access).
