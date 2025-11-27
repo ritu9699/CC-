@@ -1,0 +1,46 @@
+⭐ Using AWS S3 to Upload Files and Manage Access
+➤ Step 1: Open the S3 Service
+
+• Log in to the AWS Management Console
+• Open S3 from the list of services
+
+➤ Step 2: Create or Select a Bucket
+
+• Choose an existing bucket or click Create Bucket
+• Keep default settings or choose a region
+
+➤ Step 3: Upload Two Files
+
+• Open the bucket
+• Click Upload
+• Add two files from the system
+• Click Upload to complete
+
+➤ Step 4: Set One File to Public
+
+• Select the first file
+• Click Actions → Make Public (or Permissions → Public access)
+• Confirm the setting
+• A public link will be generated automatically
+
+➤ Step 5: Keep One File Private
+
+• Select the second file
+• Ensure that “Block Public Access” remains enabled
+• This file stays private and cannot be accessed publicly
+
+➤ Step 6: Generate a Pre-Signed URL (for Private File)
+
+• Select the private file
+• Click Actions → Share with a pre-signed URL
+• Choose expiration time (e.g., 1 hour)
+• Copy the generated pre-signed URL
+
+➤ Step 7: Record the Details in Lab Notebook
+
+• Paste the following into your lab record:
+– Bucket Name
+– Public File Link
+– Private File Pre-Signed URL
+– Upload steps
+– Access settings
