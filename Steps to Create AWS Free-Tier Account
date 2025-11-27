@@ -1,56 +1,46 @@
-Steps to Create AWS Free-Tier Account
-Step 1: Open AWS Sign-Up Page
+⭐ Steps to Create AWS Free-Tier Account
+➤ Step 1: Open AWS Sign-Up Page
 
-Visit: https://aws.amazon.com/free
+• Visit: https://aws.amazon.com/free
 
-Click “Create a Free Account”.
+• Click “Create a Free Account”
 
-Step 2: Enter Email and Password
+➤ Step 2: Enter Email and Password
 
-Provide your email address.
+• Provide your email address
+• Create an AWS login password
+• Enter an AWS Account Name (Example: Manisha-AWS)
 
-Create AWS login password.
+➤ Step 3: Choose Account Type
 
-Enter AWS Account Name (Example: Manisha-AWS).
+• Select Personal Account
+• Fill in details: full name, address, phone number
 
-Step 3: Choose Account Type
+➤ Step 4: Billing Information
 
-Select Personal Account (recommended for students).
+• Enter valid debit/credit card details
+• AWS may deduct a small refundable verification amount
 
-Fill details: full name, address, phone number.
+➤ Step 5: Phone Verification
 
-Step 4: Billing Information
+• Enter your phone number
+• Complete verification through OTP or automated call
 
-Enter valid debit/credit card details.
+➤ Step 6: Select Support Plan
 
-AWS will take a small refundable amount for verification.
+• Choose Basic Support – Free
 
-Step 5: Phone Verification
+➤ Step 7: Login to AWS Console
 
-Enter your phone number.
+• Visit: https://console.aws.amazon.com
 
-You will receive an OTP or automated call.
+• Sign in using your registered email and password
 
-Step 6: Select Support Plan
+➤ Step 8: Open the AWS Dashboard
 
-Choose Basic Support – Free.
-
-Step 7: Login to AWS Console
-
-Visit: https://console.aws.amazon.com
-
-Sign in using your email and password.
-
-Step 8: Open the AWS Dashboard
-
-The main dashboard contains services like:
-
-EC2
-
-S3
-
-Lambda
-
-RDS
-
-Take Screenshot of dashboard.
+• The dashboard shows main AWS services such as:
+– EC2
+– S3
+– Lambda
+– RDS
+• Capture a screenshot of the dashboard
