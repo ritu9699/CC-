@@ -1,0 +1,80 @@
+Launch and Connect to an Amazon EC2 Instance
+➤ Step 1: Open the AWS EC2 Service
+
+• Log in to the AWS Management Console.
+• Search for EC2 and open the EC2 Dashboard.
+
+➤ Step 2: Launch a New Instance
+
+• Click Launch Instance.
+• Enter an instance name (example: Linux-Server).
+• Under Amazon Machine Image (AMI), select a Linux OS such as:
+– Ubuntu Server 22.04 LTS
+– Amazon Linux 2 (Free Tier)
+
+➤ Step 3: Choose an Instance Type
+
+• Select t2.micro (Free Tier eligible).
+
+➤ Step 4: Generate a Key Pair
+
+• Click Create a new key pair.
+• Choose RSA type and download the .pem file.
+• This key will be used for SSH connection.
+
+➤ Step 5: Configure Security Group
+
+• Allow SSH (port 22) from your IP address.
+• Leave other settings default.
+
+➤ Step 6: Launch the Instance
+
+• Click Launch Instance and wait until the status becomes Running.
+• Copy the Public IP address from the instance details.
+
+➤ Step 7: Connect to the EC2 Instance Using SSH
+
+• Open a terminal on your system.
+• Change key permissions:
+
+chmod 400 key.pem
+
+
+• Connect using SSH:
+
+ssh -i key.pem ubuntu@<public-ip>
+
+
+(Use ec2-user instead of ubuntu for Amazon Linux 2)
+
+➤ Step 8: Run Shell Commands on the Server
+➤ Check System Uptime
+uptime
+
+
+• Displays how long the server has been running.
+
+➤ Install Apache Web Server
+sudo apt update
+sudo apt install apache2 -y
+
+
+(For Amazon Linux 2 replace with:
+
+sudo yum install httpd -y
+
+
+)
+
+➤ Start Apache Service
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+➤ Step 9: Verify Apache
+
+• Open a web browser and enter:
+
+http://<public-ip>
+
+
+• The Apache default page should load.
