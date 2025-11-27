@@ -1,0 +1,57 @@
+DEPLOYING A VIRTUAL MACHINE ON CLOUD : AWS
+
+1. Login to AWS Console
+
+Open the AWS website and sign in to the AWS Management Console.
+From the services menu, open EC2.
+
+2. Launch a New Instance
+
+Click on Launch Instance.
+Give a name to the instance.
+
+3. Select Machine Image
+
+Choose an operating system:
+
+Ubuntu Server / Amazon Linux (for Linux VM)
+
+Windows Server (for Windows VM)
+
+4. Choose Instance Type
+
+Select t2.micro, which is free-tier eligible.
+
+5. Create or Select Key Pair
+
+Create a new key pair and download it.
+This will be used to connect to the VM.
+
+6. Configure Security Group
+
+Allow the required ports:
+
+SSH (port 22) → for Linux
+
+RDP (port 3389) → for Windows
+
+7. Launch the Instance
+
+Click Launch Instance and wait until the status becomes “running”.
+
+8. Connect to the VM
+
+Linux VM: Use SSH command
+ssh -i key.pem ubuntu@<public-ip>
+
+Windows VM: Download the RDP file and log in using the password.
+
+9. Capture Details
+
+Take screenshots of:
+
+Instance description page
+
+Public IP
+
+Terminal/RDP connection screen
