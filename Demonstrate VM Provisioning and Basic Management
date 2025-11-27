@@ -1,0 +1,87 @@
+⭐ Demonstrate VM Provisioning and Basic Management
+➤ Step 1: Open Cloud Platform and Start VM Creation
+
+• Log in to AWS EC2 or Google Compute Engine (GCP).
+• Open the VM/Instance creation page from the dashboard.
+
+➤ Step 2: Choose the Operating System
+
+• Select a Linux OS such as:
+– Ubuntu 22.04 LTS
+– Amazon Linux 2 (for AWS)
+– Debian/Ubuntu (for GCP)
+
+➤ Step 3: Configure CPU and Memory
+
+• Select a machine type according to requirements:
+– AWS: t2.micro (1 vCPU, 1GB RAM – Free Tier)
+– GCP: e2-micro (Free Tier)
+• Modify CPU/RAM if needed for resizing demonstration.
+
+➤ Step 4: Configure Networking and Firewall
+
+• Enable essential ports such as:
+– SSH (22) for Linux access
+– HTTP (80) for web server access
+• Keep default networking or select a VPC/subnet.
+
+➤ Step 5: Launch the Virtual Machine
+
+• Review settings and create the VM instance.
+• Wait until the status shows Running (AWS) or Active (GCP).
+
+➤ Step 6: Connect to the VM Using SSH
+
+• Use the SSH command to access the machine:
+
+ssh -i key.pem ubuntu@<public-ip>
+
+
+• For GCP, click SSH directly from the browser console.
+
+➤ Step 7: Install a Basic Application (Apache/Nginx)
+➤ Option A: Install Apache
+sudo apt update
+sudo apt install apache2 -y
+
+➤ Option B: Install Nginx
+sudo apt update
+sudo apt install nginx -y
+
+
+• Start the service:
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+
+(or replace apache2 with nginx)
+
+➤ Step 8: Demonstrate VM Management Actions
+➤ Start the VM
+
+• From cloud console → Select VM → Start
+
+➤ Stop the VM
+
+• Select VM → Stop / Shut Down
+
+➤ Restart the VM
+
+• Select VM → Reboot / Restart
+
+➤ Resize CPU and Memory
+
+• Stop the instance
+• Modify instance type (example: t2.micro → t2.small)
+• Start the instance again
+• New CPU/RAM values will take effect
+
+➤ Step 9: Capture Screenshots
+
+• Screenshots to include:
+– VM creation settings (OS, CPU, RAM)
+– SSH connection
+– Apache/Nginx installation output
+– Start, stop, restart operations
+– Resizing/instance type change
