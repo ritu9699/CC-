@@ -1,0 +1,67 @@
+⭐ Explore Load Balancing Using Free Cloud Services
+➤ Step 1: Deploy Two Identical Web Server Instances
+
+• Launch two EC2 instances on AWS or two VM instances on Google Cloud.
+• Choose a Linux OS (Ubuntu/Amazon Linux).
+• Install a basic web app or Apache server on both:
+
+sudo apt update
+sudo apt install apache2 -y
+
+
+• Edit the index page differently on each instance so responses are unique:
+
+sudo nano /var/www/html/index.html
+
+
+Example:
+Instance 1 → “Server 1 Response”
+Instance 2 → “Server 2 Response”
+
+➤ Step 2: Configure Security Rules
+
+• Allow HTTP (port 80) for both instances.
+• Ensure both instances are reachable with their public IPs.
+
+➤ Step 3: Create a Load Balancer
+For AWS (ELB):
+
+• Open EC2 → Load Balancers → Create Load Balancer
+• Choose Application Load Balancer
+• Set:
+– Scheme: Internet-facing
+– Listener: HTTP (80)
+• Create or select a security group allowing HTTP
+• Add both EC2 instances to the target group
+• Register both instances
+• Create the load balancer
+
+For GCP Load Balancer:
+
+• Go to Network Services → Load Balancing
+• Create a new HTTP load balancer
+• Add two backend instances to the backend group
+• Configure frontend with global IP
+• Deploy the load balancer
+
+➤ Step 4: Test the Load Balancer
+
+• Copy the Load Balancer Public URL / DNS name
+• Open it in a browser several times
+• Refresh the page to observe alternating responses:
+– “Server 1 Response”
+– “Server 2 Response”
+
+This confirms traffic is being distributed across both servers.
+
+➤ Step 5: Record Public URLs and Outputs
+
+• Note the following in the lab notebook:
+– Public IP of instance 1
+– Public IP of instance 2
+– Load Balancer Public URL
+– Response output from both servers
+• Take screenshots of:
+– Load balancer configuration
+– Registered instances
+– Browser showing different server responses
