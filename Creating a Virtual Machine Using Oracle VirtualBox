@@ -1,0 +1,65 @@
+⭐ Creating a Virtual Machine Using Oracle VirtualBox
+➤ Step 1: Install Oracle VirtualBox
+
+• Download Oracle VirtualBox from the official website: https://www.virtualbox.org
+
+• Run the installer file
+• Follow the installation wizard and complete the setup
+• Launch VirtualBox after installation
+
+➤ Step 2: Start Creating a New Linux Virtual Machine
+
+• Open VirtualBox and click “New”
+• Enter the name of the VM (Example: Ubuntu-VM)
+• Select Type: Linux
+• Select Version: Ubuntu (64-bit) or CentOS (64-bit)
+• Click Next
+
+➤ Step 3: Allocate Memory (RAM)
+
+• Choose the amount of RAM for the VM (Recommended: 2GB – 4GB)
+• Click Next
+
+➤ Step 4: Create a Virtual Hard Disk
+
+• Choose Create a virtual hard disk now
+• Select VDI (VirtualBox Disk Image)
+• Choose Dynamically allocated
+• Set the disk size (Recommended: 20GB or more)
+• Click Create
+
+➤ Step 5: Attach the Linux ISO Image
+
+• Select the newly created VM from the left panel
+• Click Settings → Storage
+• Under “Controller: IDE”, click the empty disk icon
+• Click Choose a disk file
+• Select the downloaded Linux ISO file (Ubuntu/CentOS)
+• Click OK
+
+➤ Step 6: Start the VM and Begin Installation
+
+• Click Start
+• The VM will boot using the ISO file
+• Select Install Ubuntu or Install CentOS
+• Follow the installation steps:
+– Choose language
+– Set keyboard layout
+– Create user account
+– Select installation type
+– Complete installation
+
+➤ Step 7: Observe Boot Process
+
+• After installation, restart the VM
+• The Linux OS will boot from the virtual hard drive
+• Login to the desktop screen
+
+➤ Step 8: Capture Screenshots
+
+• Take screenshots of:
+– VirtualBox main window
+– VM creation steps
+– ISO selection
+– Linux installation screens
+– Final booted desktop
