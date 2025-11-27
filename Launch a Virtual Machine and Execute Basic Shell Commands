@@ -1,0 +1,59 @@
+Launch a Virtual Machine and Execute Basic Shell Commands
+➤ Step 1: Launch the Virtual Machine
+
+• Start the Linux VM created in VirtualBox or any cloud platform.
+• Wait for the Linux desktop or terminal login screen to appear.
+
+➤ Step 2: Open the Terminal
+
+• Open the Terminal from the applications menu
+OR press Ctrl + Alt + T to open a new terminal window.
+
+➤ Step 3: Execute Basic Shell Commands
+➤ pwd (Print Working Directory)
+pwd
+
+
+• Shows the current directory path.
+
+➤ ls (List Files and Folders)
+ls
+
+
+• Displays the files and directories inside the current location.
+
+➤ cd (Change Directory)
+cd /path/to/folder
+
+
+• Moves into another directory.
+Example:
+
+cd /home
+
+➤ mkdir (Make Directory)
+mkdir myfolder
+
+
+• Creates a new directory named myfolder.
+
+➤ nano (Text Editor)
+nano file.txt
+
+
+• Opens a simple text editor to create or edit a file.
+
+➤ top (Task Manager)
+top
+
+
+• Shows running processes, CPU usage, and memory usage in real time.
+• Press q to exit.
+
+➤ Step 4: Capture Outputs
+
+• Take screenshots of:
+– Terminal window
+– Output of each command
+– Created folders/files
+– top command screen
